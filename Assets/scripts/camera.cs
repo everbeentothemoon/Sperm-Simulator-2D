@@ -19,6 +19,10 @@ public class camera : MonoBehaviour
             return;
         }
 
+        Vector3 newPosition = transform.position;
+        newPosition.z = -0.60f;
+        transform.position = newPosition;
+
         Vector3 direction = (target.position - transform.position).normalized;
 
         float desiredSpeed = Mathf.Clamp(currentVelocity.magnitude + acceleration * Time.deltaTime, 0f, maxSpeed);
