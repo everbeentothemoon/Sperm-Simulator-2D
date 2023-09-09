@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class movement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    public float boostSpeed = 10f;
-    public float boostDuration = 1.0f; 
+    private float moveSpeed = 8f;
+    private float boostSpeed = 12f;
+    private float boostDuration = 0.5f; 
     private bool isBoosting = false; 
     private float boostTime = 0f;
 
